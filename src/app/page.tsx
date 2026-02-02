@@ -1,7 +1,7 @@
 'use client';
 
-import { Button, Card, CardHeader, CardContent, Text, Badge, Box } from '@wyrobowa/design-system';
 import Link from 'next/link';
+import { Button, Card, CardHeader, CardContent, Text, Badge, Box } from 'tharaday';
 
 export default function Home() {
   return (

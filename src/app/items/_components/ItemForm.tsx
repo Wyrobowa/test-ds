@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Input, Select, SelectOption } from '@wyrobowa/design-system';
+import { Box, Input, Select, SelectOption } from 'tharaday';
 
 import { ItemFormProps } from './ItemForm.types';
 

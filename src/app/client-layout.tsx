@@ -1,9 +1,9 @@
 'use client';
 
-import { DashboardLayout, Breadcrumbs, BreadcrumbItem, Text } from '@wyrobowa/design-system';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ReactNode, useState } from 'react';
+import { DashboardLayout, Breadcrumbs, BreadcrumbItem, Text } from 'tharaday';
 
 export default function ClientLayout({
   children,

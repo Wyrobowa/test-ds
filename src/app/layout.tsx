@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import '@wyrobowa/design-system/styles.css';
+import 'tharaday/styles.css';
 import { ReactNode } from 'react';
 
 import ClientLayout from './client-layout';

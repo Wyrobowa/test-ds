@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Button, Text, Card, CardHeader, CardContent } from '@wyrobowa/design-system';
+import { Box, Button, Text, Card, CardHeader, CardContent } from 'tharaday';
 
 import { ItemForm } from './_components/ItemForm';
 import { ItemGrid } from './_components/ItemGrid';

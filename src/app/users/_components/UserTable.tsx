@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Loader, Table, TableHeader, TableBody, TableRow, TableHead, TableCell, Badge, Text, Button } from '@wyrobowa/design-system';
+import { Box, Loader, Table, TableHeader, TableBody, TableRow, TableHead, TableCell, Badge, Text, Button } from 'tharaday';
 
 import { getStatusBadgeIntent } from '@/helpers/status';
 import { capitalizeFirstLetter } from '@/helpers/text';
