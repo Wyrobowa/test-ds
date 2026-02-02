@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main, master, dev]
+    branches: [main]
   pull_request:
-    branches: [main, master, dev]
+    branches: [main]
 
 jobs:
   verify:
@@ -26,3 +26,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist   # or build/
+          branch: gh-pages
