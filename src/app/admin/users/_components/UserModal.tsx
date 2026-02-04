@@ -2,7 +2,7 @@
 
 import { Box, Button, Modal } from 'tharaday';
 
-import { UserModalProps } from '@/app/users/_components/UserModal.types';
+import { UserModalProps } from '@/app/admin/users/_components/UserModal.types';
 
 import { UserForm } from './UserForm';
 

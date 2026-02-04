@@ -1,4 +1,4 @@
-import { Role, Status } from '@/app/users/types';
+import { Role, Status } from '@/app/admin/users/types';
 
 export type UserFormType = {
   name: string;

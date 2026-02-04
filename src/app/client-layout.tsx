@@ -30,43 +30,53 @@ export default function ClientLayout({ children }: { children: ReactNode }) {
   };
 
   return (
-    <DashboardLayout
-      headerTitle="DS Creator Admin"
-      user={user}
-      onLogin={() => setUser({ name: 'Admin User' })}
-      onLogout={() => setUser(undefined)}
-      onCreateAccount={() => setUser({ name: 'New User' })}
-      breadcrumbs={getBreadcrumbs()}
-      actions={
-        <nav style={{ display: 'flex', gap: '1rem' }}>
-          <Link href="/" style={{ textDecoration: 'none' }}>
-            <Text
-              variant="label"
-              weight={pathname === '/' ? 'bold' : 'regular'}
-            >
-              Home
-            </Text>
-          </Link>
-          <Link href="/users" style={{ textDecoration: 'none' }}>
-            <Text
-              variant="label"
-              weight={pathname === '/users' ? 'bold' : 'regular'}
-            >
-              Users
-            </Text>
-          </Link>
-          <Link href="/items" style={{ textDecoration: 'none' }}>
-            <Text
-              variant="label"
-              weight={pathname === '/items' ? 'bold' : 'regular'}
-            >
-              Items
-            </Text>
-          </Link>
-        </nav>
-      }
-    >
-      {children}
-    </DashboardLayout>
+    <div className="tapestry-shell">
+      <DashboardLayout
+        headerTitle="Tharaday Books"
+        user={user}
+        onLogin={() => setUser({ name: 'Admin User' })}
+        onLogout={() => setUser(undefined)}
+        onCreateAccount={() => setUser({ name: 'New User' })}
+        breadcrumbs={getBreadcrumbs()}
+        actions={
+          <nav className="tapestry-nav">
+            <Link href="/" className="tapestry-link">
+              <Text
+                variant="label"
+                weight={pathname === '/' ? 'bold' : 'regular'}
+              >
+                Home
+              </Text>
+            </Link>
+            <Link href="/browse" className="tapestry-link">
+              <Text
+                variant="label"
+                weight={pathname === '/browse' ? 'bold' : 'regular'}
+              >
+                Browse
+              </Text>
+            </Link>
+            <Link href="/sell" className="tapestry-link">
+              <Text
+                variant="label"
+                weight={pathname === '/sell' ? 'bold' : 'regular'}
+              >
+                Sell
+              </Text>
+            </Link>
+            <Link href="/admin" className="tapestry-link">
+              <Text
+                variant="label"
+                weight={pathname.startsWith('/admin') ? 'bold' : 'regular'}
+              >
+                Admin
+              </Text>
+            </Link>
+          </nav>
+        }
+      >
+        {children}
+      </DashboardLayout>
+    </div>
   );
 }

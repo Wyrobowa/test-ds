@@ -27,10 +27,10 @@ export default function ItemsPage() {
     <Box paddingY={8}>
       <Box display="flex" flexDirection="column" gap={2} paddingBottom={8}>
         <Text variant="h1" weight="bold">
-          Tasks list
+          Listings moderation
         </Text>
         <Text variant="body-md" color="subtle">
-          TO-DO like list
+          Review and maintain book listings across the marketplace.
         </Text>
       </Box>
 
@@ -38,7 +38,9 @@ export default function ItemsPage() {
         {/* Left Side: Form */}
         <Box>
           <Card bordered shadow="sm">
-            <CardHeader title={editingItem ? 'Edit item' : 'Add new item'} />
+            <CardHeader
+              title={editingItem ? 'Edit listing' : 'Add new listing'}
+            />
             <CardContent>
               <Box display="flex" flexDirection="column" gap={6}>
                 <ItemForm
@@ -59,8 +61,8 @@ export default function ItemsPage() {
                     {isLoading
                       ? 'Processing...'
                       : editingItem
-                        ? 'Update'
-                        : 'Create'}
+                        ? 'Update listing'
+                        : 'Create listing'}
                   </Button>
                   {editingItem && (
                     <Button

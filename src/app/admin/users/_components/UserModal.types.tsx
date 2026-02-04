@@ -1,5 +1,5 @@
-import { UserFormType } from '@/app/users/_components/UserForm.types';
-import { Role, Status } from '@/app/users/types';
+import { UserFormType } from '@/app/admin/users/_components/UserForm.types';
+import { Role, Status } from '@/app/admin/users/types';
 
 export interface UserModalProps {
   isOpen: boolean;

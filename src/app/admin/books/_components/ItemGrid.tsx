@@ -11,7 +11,7 @@ import {
   Loader,
 } from 'tharaday';
 
-import { ItemGridProps } from '@/app/items/_components/ItemGrid.types';
+import { ItemGridProps } from '@/app/admin/books/_components/ItemGrid.types';
 import { getStatusBadgeIntent } from '@/helpers/status';
 import { capitalizeFirstLetter } from '@/helpers/text';
 

@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'DS Creator Admin',
-  description: 'Testing local design system in Next.js',
+  title: 'Tharaday Books',
+  description: 'Book marketplace and admin panel for Tharaday components',
 };
 
 export default function RootLayout({

@@ -5,9 +5,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 This repo is configured to deploy a static export to GitHub Pages via `pages.yml`.
 
 Requirements:
+
 - Set a GitHub Actions Variable: `NEXT_PUBLIC_API_BASE_URL` (e.g. `https://tharaday-vercel.vercel.app`).
 
 Notes:
+
 - The workflow auto-detects whether the repo is `*.github.io` (root site) or a project page and sets `basePath`/`assetPrefix` accordingly.
 - The output is generated with `next build` using `output: "export"` and deployed from the `out/` folder.
 
@@ -17,9 +19,9 @@ Notes:
 
 ## Deploy Checklist
 
-1) Set `NEXT_PUBLIC_API_BASE_URL` in GitHub Actions Variables.
-2) Push to `main`.
-3) Verify the Pages build in the Actions tab and visit the published URL.
+1. Set `NEXT_PUBLIC_API_BASE_URL` in GitHub Actions Variables.
+2. Push to `main`.
+3. Verify the Pages build in the Actions tab and visit the published URL.
 
 ## Getting Started
 

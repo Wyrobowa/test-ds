@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import { Role, Status, UserRow } from '@/app/users/types';
+import { Role, Status, UserRow } from '@/app/admin/users/types';
 import { apiGet, apiPatch, apiPost } from '@/lib/api';
 
 import { UserFormType } from '../_components/UserForm.types';

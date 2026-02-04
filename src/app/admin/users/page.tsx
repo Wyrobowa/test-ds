@@ -35,7 +35,10 @@ export default function UsersPage() {
       >
         <Box display="flex" alignItems="center" gap={4}>
           <Text variant="h1" weight="bold">
-            Users Directory
+            Users
+          </Text>
+          <Text variant="body-sm" color="subtle">
+            Admin management for buyers and sellers.
           </Text>
         </Box>
         <Button
@@ -44,7 +47,7 @@ export default function UsersPage() {
           onClick={openAddModal}
           disabled={isLoading}
         >
-          Add New User
+          Add user
         </Button>
       </Box>
 
